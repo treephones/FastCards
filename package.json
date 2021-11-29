@@ -1,0 +1,24 @@
+{
+  "name": "fastcards",
+  "version": "1.0.0",
+  "description": "An easy-to-use API designed for providing flashcards.",
+  "main": "fastcards.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treephones/FastCards.git"
+  },
+  "author": "Moez B.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/treephones/FastCards/issues"
+  },
+  "homepage": "https://github.com/treephones/FastCards#readme"
+}
