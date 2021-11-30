@@ -1,0 +1,1 @@
+web: node fastcards.js
