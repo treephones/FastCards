@@ -3,7 +3,7 @@ const express = require('express');
 require('dotenv').config();
 
 //initialization
-const port = process.env.PORT | 3000;
+const PORT = process.env.PORT | 3000;
 let app = express();
 
 app.use(express.static("public"));
@@ -19,5 +19,5 @@ app.get(['/', '/home'], (req, res) => {
     res.sendFile(`${__dirname}/statics/home/index.html`);
 });
 
-app.listen(port);
-console.log(`FastCards has started and is listening on port ${port}.`);
+app.listen(PORT);
+console.log(`FastCards has started and is listening on port ${PORT}.`);
