@@ -1,6 +1,7 @@
 //requirements
 const express = require('express');
 require('dotenv').config();
+const scraper = require('./scraper.js');
 
 //initialization
 const PORT = process.env.PORT | 3000;

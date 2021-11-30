@@ -48,11 +48,9 @@ async function getFlashcards(links, max) {
 }
 
 async function getFlashcardResponse(query, max=10) {
-    getQueryFlashcardsURL(query).then((links) => {
-        getFlashcards(links, max).then((response) => {
-            return response;
-        });
-    });
+    let links = await getQueryFlashcardsURL(query);
+    let res = await getFlashcards(links, max);
+    return res;
 }
 
-module.export = getFlashcardResponse;
+exports.getFlashcardResponse = getFlashcardResponse;
