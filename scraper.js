@@ -28,6 +28,9 @@ async function getQueryFlashcardsURL(query) {
 }
 
 async function getFlashcards(links, max) {
+    if(links.length == 0) {
+        return {from_url: null, number_of_flashcards: 0, flashcards: []};
+    }
     let url = `${mURL}${links[Math.floor(Math.random()*links.length)]}`;
     let flashcards = [];
     try {
@@ -47,7 +50,7 @@ async function getFlashcards(links, max) {
     }
 }
 
-async function getFlashcardResponse(query, max=10) {
+async function getFlashcardResponse(query, max) {
     let links = await getQueryFlashcardsURL(query);
     let res = await getFlashcards(links, max);
     return res;
