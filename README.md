@@ -1,6 +1,6 @@
 # FastCards
 
-FastCards is an easy-to-use API for fetching flashcards given a topic. All flashcards provided by the public API are from fetched from [Cram](https://www.cram.com/).
+FastCards is an easy-to-use API for fetching flashcards on a given topic. All flashcards provided by the public API are fetched from [Cram](https://www.cram.com/).
 
 ## Public API
 
