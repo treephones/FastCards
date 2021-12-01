@@ -29,7 +29,7 @@ Example Request:
 ```
 A successful response will contain 3 keys:
 - `from_url`: The [Cram](https://www.cram.com/) URL from which the flashcards were fetched.
-- `number_of_flashcards`: The number of flashcards provided. The value will be >= `max`.
+- `number_of_flashcards`: The number of flashcards provided. The value will be <= `max`.
 - `flashcards`: List of flashcards. Each list element contains a `question` and `answer` key.
 
 Example Response:
