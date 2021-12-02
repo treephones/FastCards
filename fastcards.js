@@ -1,15 +1,24 @@
 //requirements
 const express = require('express');
+const rateLimiter = require('express-rate-limit');
 require('dotenv').config();
 const scraper = require('./scraper.js');
 
 //initialization
 const PORT = process.env.PORT || 3000;
+
+const rateLimit = rateLimiter({
+    windowMs: 60000,
+    max: 20,
+    message: {err: 'Too many requests! To recieve unlimited key, message Treephones#4601 on discord.'}
+});
+
 let app = express();
 
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(rateLimit);
 
 //static files
 app.get('/statics/:page/:file', (req, res) => {
