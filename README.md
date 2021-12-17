@@ -1,6 +1,6 @@
 # FastCards
 
-FastCards is an easy-to-use API written in Express for fetching flashcards on a given topic. All flashcards provided by the public API are fetched from [Cram](https://www.cram.com/).
+FastCards is an easy-to-use API written in Express for fetching flashcards on a given topic. All flashcards provided by the public API are fetched from [Cram](https://www.cram.com/). Test out a request at the [homepage](https://fastcardsapi.herokuapp.com/).
 
 ## Public API
 
