@@ -22,7 +22,7 @@ app.use(rateLimit);
 
 //static files
 app.get('/statics/:page/:file', (req, res) => {
-    res.sendFile(__dirname + `/${req.params.page}` + `/${req.params.file}`);
+    res.sendFile(`${__dirname}/statics/${req.params.page}/${req.params.file}`);
 });
 
 //routes

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/statics/home/styles.css">
+        <title>FastCards</title>
+    </head>
+    <body>
+        <h1 id="title">FastCards Tester</h1>
+        <p id="d">For API usage information, visit the projects <a href="https://github.com/treephones/FastCards/blob/master/README.md">GitHub</a>.</p>
+        <h3>Test out a request:</h2>
+        <textarea id="jsa" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' style="resize:none" cols="80" rows="8">{
+            "query": string, 
+            "max": int
+}</textarea>
+        <br>
+        <p id="err"></p>
+        <button id="send">Send</button>
+        <h3>Response:</h2>
+        <p id="time"></p>
+        <p id="status"></p>
+        <textarea id="res" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' style="resize:none" cols="80" rows="20" readonly="true">No request sent.</textarea>
+    </body>
+    <script src="/statics/home/script.js"></script>
+</html>
